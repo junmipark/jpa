@@ -1,9 +1,0 @@
-2022-11-29 13:38:45 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
-/* insert jpa.start.Member */ insert into MEMBER (AGE, USERNAME, ID) values (?, ?, ?) [42104-214]
-2022-11-29 13:39:45 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
-/* insert jpa.start.Member */ insert into MEMBER (AGE, USERNAME, ID) values (?, ?, ?) [42104-214]
-2022-11-29 13:42:35 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
-/* insert jpa.start.Member */ insert into MEMBER (AGE, USERNAME, ID) values (?, ?, ?) [42104-214]
