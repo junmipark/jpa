@@ -27,7 +27,7 @@
 
 ### Connect to Server
 
-    1. Connect to H2 Console("http://localhost:8082")
+    1. Execute H2 Console("http://localhost:8082")
     2. Fill out properties as you want to connect
     3. Test connection whether it is working properly
     4. If working properly, Click "Connect" button
