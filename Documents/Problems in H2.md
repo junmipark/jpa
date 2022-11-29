@@ -1,5 +1,5 @@
 ---
-    title : Problems when using h2
+    title : Problems in h2
     author : junmipark
     date : 2022-11-29
 ---
