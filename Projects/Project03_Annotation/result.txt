@@ -1,0 +1,54 @@
+Hibernate:
+
+    drop table if exists ITEM CASCADE
+Hibernate:
+
+    drop table if exists MEMBER CASCADE
+Hibernate:
+
+    drop table if exists ORDER_ITEM CASCADE
+Hibernate:
+
+    drop table if exists ORDERS CASCADE
+Hibernate:
+
+    drop sequence if exists HIBERNATE_SEQUENCE
+Hibernate: create sequence HIBERNATE_SEQUENCE start with 1 increment by 1
+Hibernate:
+
+    create table ITEM (
+       ITEM_ID bigint not null,
+        NAME varchar(255),
+        PRICE integer not null,
+        STOCK_QUANTITY integer not null,
+        primary key (ITEM_ID)
+    )
+Hibernate:
+
+    create table MEMBER (
+       MEMBER_ID bigint not null,
+        CITY varchar(255),
+        NAME varchar(255),
+        STREET varchar(255),
+        ZIPCODE varchar(255),
+        primary key (MEMBER_ID)
+    )
+Hibernate:
+
+    create table ORDER_ITEM (
+       ORDER_ITEM_ID bigint not null,
+        COUNT integer not null,
+        ITEM_ID bigint,
+        ORDER_ID bigint,
+        ORDER_PRICE integer not null,
+        primary key (ORDER_ITEM_ID)
+    )
+Hibernate:
+
+    create table ORDERS (
+       ORDER_ID bigint not null,
+        MEMBER_ID bigint,
+        ORDER_DATE timestamp,
+        STATUS varchar(255),
+        primary key (ORDER_ID)
+    )
